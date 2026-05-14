@@ -1,0 +1,24 @@
+{
+  "cookies": [
+    {
+      "name": "CONSENTMGR",
+      "value": "consent:true%7Cts:1778282903801",
+      "domain": ".tui.nl",
+      "path": "/",
+      "expires": 1900000000,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "CookiesAccepted",
+      "value": "yes",
+      "domain": "www.tui.nl",
+      "path": "/",
+      "expires": 1900000000,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ]
+}

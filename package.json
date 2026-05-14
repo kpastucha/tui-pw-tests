@@ -1,0 +1,35 @@
+{
+  "name": "tui-pw-tests",
+  "version": "1.0.0",
+  "description": "TUI Playwright Tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run format && npm run lint && npm run tsc:check",
+    "build:fix": "npm run format:fix && npm run lint:fix && npm run tsc:check",
+    "clean": "node -e \"['playwright-report', 'test-results', 'dist'].forEach(dir => fs.rmSync(dir, { recursive: true, force: true }))\"",
+    "test": "npx playwright test",
+    "test:setup": "npx playwright install chromium webkit firefox --with-deps",
+    "test:ui": "npx playwright test --ui",
+    "test:report": "npx playwright test show-report",
+    "test:update": "npx playwright test --grep \"@visual\" --update-snapshots",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "tsc:check": "tsc --noEmit",
+    "deps:update": "npx npm-check-updates -u && npm install"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.60.0",
+    "@types/node": "25.7.0",
+    "eslint": "10.3.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-playwright": "2.10.2",
+    "prettier": "3.8.3",
+    "prettier-plugin-organize-imports": "4.3.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.59.3"
+  }
+}
