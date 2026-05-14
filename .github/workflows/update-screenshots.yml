@@ -6,14 +6,12 @@ on:
       workers_count:
         description: 'Select number of workers'
         required: true
-        default: '1'
+        default: 1
         type: choice
         options:
           - '1'
           - '2'
-          - '4'
-          - '6'
-          - '8'
+          - '3'          
       retries_count:
         description: 'Select number of retries'
         required: true
