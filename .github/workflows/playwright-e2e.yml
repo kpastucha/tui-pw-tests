@@ -11,7 +11,7 @@ on:
         options:
           - '1'
           - '2'
-          - '3'          
+          - '3'
       retries_count:
         description: 'Select number of retries'
         required: true
